@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start:watch": "tsc -w",
-    "start:build": "nodemon index.js",
+    "start:build": "nodemon ./build/index.js",
     "start": "concurrently npm:start:*"
   },
   "keywords": [],
