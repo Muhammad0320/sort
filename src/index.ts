@@ -1,7 +1,7 @@
 class Sorter {
   constructor(public collection: number[]) {}
 
-  sort(): void {
+  sort() {
     const { length } = this.collection;
 
     for (let i = 0; i < length; i++) {
@@ -15,7 +15,11 @@ class Sorter {
         }
       }
     }
+
+    return this;
   }
 }
 
-const sort = new Sorter([2, -3 - 10, 9, 0]).sort();
+const sort = new Sorter([2, -3 - 10, 9, 0]).sort().collection;
+
+console.log(sort);

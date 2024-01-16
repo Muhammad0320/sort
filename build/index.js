@@ -14,6 +14,8 @@ class Sorter {
                 }
             }
         }
+        return this;
     }
 }
-const sort = new Sorter([2, -3 - 10, 9, 0]).sort();
+const sort = new Sorter([2, -3 - 10, 9, 0]).sort().collection;
+console.log(sort);
