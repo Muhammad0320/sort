@@ -17,3 +17,5 @@ class Sorter {
     }
   }
 }
+
+const sort = new Sorter([2, -3 - 10, 9, 0]).sort();
