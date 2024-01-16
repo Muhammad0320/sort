@@ -1,7 +1,5 @@
-console.log("Show something");
+class Sorter {
+  constructor(public collection: number[]) {}
 
-const logSomething = () => {
-  console.log("Something");
-};
-
-logSomething();
+  sort(): void {}
+}

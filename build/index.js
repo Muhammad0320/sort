@@ -1,6 +1,7 @@
 "use strict";
-console.log("Show something");
-const logSomething = () => {
-    console.log("Something");
-};
-logSomething();
+class Sorter {
+    constructor(collection) {
+        this.collection = collection;
+    }
+    sort() { }
+}
