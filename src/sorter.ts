@@ -1,4 +1,6 @@
-class Sorter {
+import { NumbersCollection } from "./NumberCollection";
+
+export class Sorter {
   constructor(public collection: NumbersCollection) {}
 
   sort() {
