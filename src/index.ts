@@ -1,8 +1,8 @@
-import { NumbersCollection } from "./NumberCollection";
 import { Sorter } from "./sorter";
+import { CharacterCollection } from "./CharacterCollection";
 
-const numberCollection = new NumbersCollection([1, 3, -4, 0, -2]);
+const charsCollection = new CharacterCollection("xybxsarup");
 
-const sorter = new Sorter(numberCollection);
+const sorter = new Sorter(charsCollection);
 
 console.log(sorter.sort().collection);
