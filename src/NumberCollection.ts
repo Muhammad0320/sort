@@ -1,4 +1,6 @@
-export class NumbersCollection {
+import { SortableCollection } from "./sorter";
+
+export class NumbersCollection implements SortableCollection {
   constructor(public data: number[]) {}
 
   get length(): number {
