@@ -1,21 +1,7 @@
 "use strict";
-class Sorter {
-    constructor(collection) {
-        this.collection = collection;
-    }
-    sort() {
-        const { length } = this.collection;
-        for (let i = 0; i < length; i++) {
-            for (let j = 0; j < length - i - 1; j++) {
-                if (this.collection[j] > this.collection[j + 1]) {
-                    const temp = this.collection[j];
-                    this.collection[j] = this.collection[j + 1];
-                    this.collection[j + 1] = temp;
-                }
-            }
-        }
-        return this;
-    }
-}
-const sort = new Sorter([2, -3 - 10, 9, 0]).sort().collection;
-console.log(sort);
+Object.defineProperty(exports, "__esModule", { value: true });
+const NumberCollection_1 = require("./NumberCollection");
+const sorter_1 = require("./sorter");
+const numberCollection = new NumberCollection_1.NumbersCollection([1, 3, -4, 0, -2]);
+const sorter = new sorter_1.Sorter(numberCollection);
+console.log(sorter.sort().collection);
