@@ -12,4 +12,16 @@ export class CharacterCollection implements SortableCollection {
       this.data[leftIndex].toLowerCase() > this.data[rightIndex].toLowerCase()
     );
   }
+
+  swap(leftIndex: number, rightIndex: number): void {
+    const characters = this.data.split("");
+
+    const leftChars = characters[leftIndex];
+
+    characters[leftIndex] = characters[rightIndex];
+
+    characters[rightIndex] = leftChars;
+
+    this.data = characters.join("");
+  }
 }
