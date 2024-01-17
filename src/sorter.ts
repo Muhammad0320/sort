@@ -1,6 +1,4 @@
-import { NumbersCollection } from "./NumberCollection";
-
-interface SortableCollection {
+export interface SortableCollection {
   length: number;
 
   compare: (leftIndex: number, rightIndex: number) => boolean;
