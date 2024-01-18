@@ -7,9 +7,9 @@ export interface SortableCollection {
 }
 
 export abstract class Sorter {
-  abstract compare: (leftIndex: number, rightIndex: number) => boolean;
-
   abstract length: number;
+
+  abstract compare(leftIndex: number, rightIndex: number): boolean;
 
   abstract swap(leftIndex: number, rightIndex: number): void;
 
